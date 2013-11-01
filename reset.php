@@ -19,7 +19,7 @@ $links = $crawler->filter('.listapp h1 a');
 
 if ( $links->count())
 {
-    echo "No apps found.\n";
+    echo 'No apps found.' . PHP_EOL;
     exit(1);
 }
 
@@ -32,6 +32,6 @@ $links->each(function($link) use ($client)
     echo '.';
 
     $client->submit($form);
-    echo " Done\n";
+    echo ' Done' . PHP_EOL;
 });
 
