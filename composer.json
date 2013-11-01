@@ -1,0 +1,8 @@
+{
+    "require": {
+        "kriswallsmith/buzz": "dev-master@dev",
+        "symfony/dom-crawler": "dev-master@dev",
+        "symfony/css-selector": "dev-master@dev",
+        "fabpot/goutte": "dev-master@dev"
+    }
+}
