@@ -17,7 +17,7 @@ $crawler = $client->submit($form);
 
 $links = $crawler->filter('.listapp h1 a');
 
-if ( $links->count())
+if ( ! $links->count())
 {
     echo 'No apps found.' . PHP_EOL;
     exit(1);
