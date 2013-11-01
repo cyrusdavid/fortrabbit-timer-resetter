@@ -10,8 +10,8 @@ $client->getClient()->setConfig(array('debug' => true));
 $crawler = $client->request('GET', 'https://my.fortrabbit.com/login/');
 
 $form = $crawler->selectButton('Login')->form();
-$form['data[Account][email]'] = getenv('FRB_USERNAME');
-$form['data[Account][password]'] = getenv('FRB_PASSWORD');
+$form['data[Account][email]'] = $_GET['FRB_USERNAME'];
+$form['data[Account][password]'] = $_GET['FRB_PASSWORD'];
 
 $crawler = $client->submit($form);
 
